@@ -4,14 +4,17 @@ module.exports = {
     public: {url: '/', static: true},
     src: {url: '/dist'},
   },
-  plugins: ['@snowpack/plugin-babel', '@snowpack/plugin-dotenv'],
+  plugins: ['@snowpack/plugin-babel', '@snowpack/plugin-dotenv', '@snowpack/plugin-postcss'],
   install: [
     /* ... */
   ],
   installOptions: {
     /* ... */
+    
   },
   devOptions: {
+    output: 'dashboard',
+    hmrErrorOverlay: false
     /* ... */
   },
   buildOptions: {
@@ -23,4 +26,5 @@ module.exports = {
   alias: {
     /* ... */
   },
+  
 };
