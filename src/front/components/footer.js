@@ -54,8 +54,8 @@ class footer extends LitElement {
                     <ul>
                         <li class="footer-links"><a href="domain-search">Domains</a></li>
                         <li class="footer-links"><a href="templates">Website Templates</a></li>
-                        <li class="footer-links"><a href="stores">Online Stores</a></li>
-                        <li class="footer-links"><a href="pos">Point Of Sales</a></li>
+                        <li class="footer-links"><a href="online-store">Online Stores</a></li>
+                        <li class="footer-links"><a href="point-of-sale">Point Of Sales</a></li>
                         <li class="footer-links"><a href="marketing-tools">Marketing Tools</a></li>
                         <li class="footer-links"><a href="email-marketing">Email Marketing</a></li>
                         <li class="footer-links"><a href="professional-email">Professional Email</a></li>

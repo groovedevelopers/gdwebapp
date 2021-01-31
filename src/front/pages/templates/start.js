@@ -202,11 +202,11 @@ class start extends LitElement {
 
                 <input
                   type="radio"
-                  id="personal"
+                  id="Politics"
                   name="radioFilter"
                   value="orange"
                 />
-                <label for="personal">Politics</label>
+                <label for="Politics">Politics</label>
 
                 <input
                   type="radio"

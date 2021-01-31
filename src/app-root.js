@@ -38,6 +38,13 @@ export class AppRoot extends LitElement {
     page('/register', (context)=> {this.changeRoute(context)});
     page('/login', (context)=> {this.changeRoute(context)});
     page('/domain-search', (context)=> {this.changeRoute(context)});
+    page('/online-store', (context)=> {this.changeRoute(context)});
+    page('/point-of-sale', (context)=> {this.changeRoute(context)});
+    page('/marketing-tools', (context)=> {this.changeRoute(context)});
+    page('/email-marketing', (context)=> {this.changeRoute(context)});
+    page('/professional-email', (context)=> {this.changeRoute(context)});
+    page('/cloud-storage', (context)=> {this.changeRoute(context)});
+    page('/scheduling', (context)=> {this.changeRoute(context)});
     page('*', (context)=> {this.changeRoute(context)});
     page()
 
@@ -75,6 +82,33 @@ export class AppRoot extends LitElement {
       case '/domain-search':
         
         return lazyLoad(import('./front/pages/domain/index'),html`<domain-name></domain-name>`);
+
+      case '/online-store':
+        
+          return lazyLoad(import('./front/pages/stores/index'),html`<online-store></online-store>`);
+
+      case '/point-of-sale':
+        
+          return lazyLoad(import('./front/pages/stores/pos'),html`<point-of-sale></point-of-sale>`);
+      case '/marketing-tools':
+        
+          return lazyLoad(import('./front/pages/marketing/index'),html`<marketing-tools></marketing-tools>`);
+          
+      case '/email-marketing':
+        
+          return lazyLoad(import('./front/pages/marketing/email'),html`<email-marketing></email-marketing>`);
+
+      case '/professional-email':
+        
+          return lazyLoad(import('./front/pages/marketing/profEmail'),html`<professional-email></professional-email>`);
+
+      case '/cloud-storage':
+        
+            return lazyLoad(import('./front/pages/cloud/index'),html`<cloud-storage></cloud-storage>`);
+
+      case '/scheduling':
+        
+          return lazyLoad(import('./front/pages/marketing/scheduling'),html`<appointment-scheduling></appointment-scheduling>`);
 
     // FRONT ROUTES ENDS
 

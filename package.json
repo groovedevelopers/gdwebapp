@@ -24,6 +24,7 @@
     "react-dom": "^17.0.1",
     "rxfire": "^4.0.0",
     "rxjs": "^6.6.3",
+    "soap": "^0.36.0",
     "subsink": "^1.0.2",
     "wired-button": "^2.1.0",
     "wired-calendar": "^2.1.1",
