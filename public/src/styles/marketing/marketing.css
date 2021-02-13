@@ -132,6 +132,41 @@ height: 100vh;
     }
 
 
+    .social-marketing-Head{
+        display: flex;
+        box-shadow: 2px 2px 2px 2px #f1f1f1; 
+    }
+
+    .social-marketing-Head1{
+        flex:1;
+        padding: 10px;
+    }
+
+    /* .social-marketing-Head1:hover{
+        box-shadow: 7px 7px 7px 7px #f1f1f1; 
+    } */
+
+
+    .social-marketing-Head2{
+        padding: 10px;
+        right: -20px;
+        /* flex: 1; */
+        color: black;
+    }
+
+    .social-marketing-Head2:hover{
+        box-shadow: 7px 7px 7px 7px #f1f1f1; 
+    }
+
+    .social-marketing-icon{
+        padding: 5px;
+    }
+
+    .social-marketing-icon:hover{
+        box-shadow: 7px 7px 7px 7px #f1f1f1; 
+    }
+
+
 
 
 

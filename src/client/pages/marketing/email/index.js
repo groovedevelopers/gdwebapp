@@ -17,18 +17,19 @@ class main extends LitElement {
   }
 
   audience() {
-    document.querySelector('.audience').style.display = 'block';
+   
+    document.querySelector('.audiences').style.display = 'block';
     document.querySelector('.campaigns').style.display = 'none';
     document.querySelector('.automations').style.display = 'none';
   }
   campaigns() {
-    document.querySelector('.audience').style.display = 'none';
+    document.querySelector('.audiences').style.display = 'none';
     document.querySelector('.campaigns').style.display = 'block';
     document.querySelector('.automations').style.display = 'none';
   }
 
   automations() {
-    document.querySelector('.audience').style.display = 'none';
+    document.querySelector('.audiences').style.display = 'none';
     document.querySelector('.campaigns').style.display = 'none';
     document.querySelector('.automations').style.display = 'block';
   }
@@ -122,7 +123,7 @@ class main extends LitElement {
           </div>
         </div>
 
-        <div class="audience">
+        <div class="audiences">
           <div style="display:flex;">
             <div class="email-marketingNav">
               <div class="email-marketingMenu">
