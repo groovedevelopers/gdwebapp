@@ -45,6 +45,23 @@ export class AppRoot extends LitElement {
     page('/professional-email', (context)=> {this.changeRoute(context)});
     page('/cloud-storage', (context)=> {this.changeRoute(context)});
     page('/scheduling', (context)=> {this.changeRoute(context)});
+    page('/commerce', (context)=> {this.changeRoute(context)});
+    page('/commerce/product-manager', (context)=> {this.changeRoute(context)});
+    page('/commerce/all-product', (context)=> {this.changeRoute(context)});
+    page('/commerce/add-product', (context)=> {this.changeRoute(context)});
+    page('/commerce/product-categories', (context)=> {this.changeRoute(context)});
+    page('/commerce/product-brands', (context)=> {this.changeRoute(context)});
+    page('/commerce/product-settings', (context)=> {this.changeRoute(context)}); 
+    page('/commerce/edit-product', (context)=> {this.changeRoute(context)});
+    page('/commerce/purchase-manager', (context)=> {this.changeRoute(context)}); 
+    page('/commerce/point-of-sales', (context)=> {this.changeRoute(context)}); 
+    page('/commerce/gift-cards', (context)=> {this.changeRoute(context)}); 
+    page('/commerce/discount-manager', (context)=> {this.changeRoute(context)}); 
+
+    // Marketing Tools
+
+    page('/marketing', (context)=> {this.changeRoute(context)}); 
+
     page('*', (context)=> {this.changeRoute(context)});
     page()
 
@@ -135,6 +152,48 @@ export class AppRoot extends LitElement {
       case '/editor':
         
         return lazyLoad(import('./client/pages/editor/mainarea'),html`<main-page></main-page>`);
+      case '/commerce':
+        
+        return lazyLoad(import('./client/pages/ecommerce/index'),html`<ecommerce-client></ecommerce-client>`);
+      case '/commerce/product-manager':
+        
+        return lazyLoad(import('./client/pages/ecommerce/products/index'),html`<product-manager></product-manager>`);
+      case '/commerce/all-product':
+        
+        return lazyLoad(import('./client/pages/ecommerce/products/all'),html`<all-product></all-product>`);
+      case '/commerce/add-product':
+        
+        return lazyLoad(import('./client/pages/ecommerce/products/add.js'),html`<add-product></add-product>`);
+      case '/commerce/product-categories':
+        
+        return lazyLoad(import('./client/pages/ecommerce/products/categories'),html`<product-categories></product-categories>`);
+      case '/commerce/product-brands':
+        
+        return lazyLoad(import('./client/pages/ecommerce/products/brands'),html`<product-brands></product-brands>`);
+      case '/commerce/product-settings':
+        
+        return lazyLoad(import('./client/pages/ecommerce/products/settings'),html`<product-settings></product-settings>`);
+      case '/commerce/edit-product':
+        
+        return lazyLoad(import('./client/pages/ecommerce/products/edit'),html`<edit-product></edit-product>`);
+      case '/commerce/purchase-manager':
+        
+        return lazyLoad(import('./client/pages/ecommerce/purchase/index'),html`<purchase-manager></purchase-manager>`);
+      case '/commerce/point-of-sales':
+        
+        return lazyLoad(import('./client/pages/ecommerce/pos/index'),html`<point-of-sales></point-of-sales>`);
+      case '/commerce/gift-cards':
+        
+        return lazyLoad(import('./client/pages/ecommerce/products/giftCard'),html`<gift-cards></gift-cards>`);
+      case '/commerce/discount-manager':
+        
+        return lazyLoad(import('./client/pages/ecommerce/discounts/index'),html`<discount-manager></discount-manager>`);
+
+        // Marketing Tools
+
+      case '/marketing':
+        
+        return lazyLoad(import('./client/pages/marketing/index'),html`<marketing-tools></marketing-tools>`);
     }
   }
   render() {

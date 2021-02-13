@@ -68,7 +68,9 @@ class main extends LitElement {
        <div class="editor-header">
           <div class="editor-header-left">
             <div class="container">
+             <a href="/my-dashboard">
               <button @click=${this.savePage} class="btn btn-outline-primary">Done</button>
+              </a>
             </div>
           </div>
 

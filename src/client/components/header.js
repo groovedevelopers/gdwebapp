@@ -12,7 +12,7 @@ class Header extends LitElement {
     return html`
       <div class="dashboard-header">
         <div class="dashboard-header-left">
-          <a class="mysitename" href="#">
+          <a class="mysitename" href="my-dashboard">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/gdmaintest.appspot.com/o/logo_transparent_background.png?alt=media&token=af55c7ae-3c74-455e-b19f-0a0b899d6e59"
               width="100px"

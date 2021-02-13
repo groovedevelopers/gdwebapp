@@ -8,8 +8,8 @@ export const queryString$ = new BehaviorSubject('').pipe(distinctUntilChanged(),
 export const queryParamMapper = (queryParam) => {
     return map(queryString => {
         const urlParams = new URLSearchParams(queryString);
-        const category = urlParams.get(queryParam);
-        return category? [category]: []
+        return urlParams.get(queryParam);
+        
     })
 }
 

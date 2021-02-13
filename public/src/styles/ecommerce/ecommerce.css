@@ -1,0 +1,296 @@
+body{
+    background: white;
+}
+.ecommerceArea{
+    /* display: flex; */
+    position: relative;
+    align-items: center;
+    top: 0;
+    margin:auto;
+}
+.ecommerceBody{
+    flex: 1;
+    
+    /* border: 1px solid red; */
+}
+.ecommerce-Containers{
+   
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    box-shadow: 0px 5px 2px 0px #110746;
+    padding: 12px 16px;
+    border-radius: 20px;
+}
+
+.ecommerce-Containers:hover{
+    box-shadow: 0px 8px 16px 0px #110746;
+}
+
+.ecomMenu-T{
+    text-align: center;
+    margin-top: 50%;
+    font-size: larger;
+}
+
+.addProduct{
+    background: white;
+    box-shadow: 1px 1px 1px 1px #f1f1f1;
+    border-radius: 25px;
+    width: 900px;
+    
+
+}
+
+.commerceHead{
+    display: flex;
+}
+
+.commerceAtt{
+    flex: 1;
+    text-align: right;
+
+}
+.h1{
+font-family: 'Times New Roman', Times, serif;
+font-size: 30px;
+text-align: center;
+padding: 10px;
+}
+
+.form-gorup{
+    padding: 10px;
+}
+
+.edit-tab{
+    padding-top: 10px;
+}
+
+.edit-tab-h1{
+    padding: 10px;
+    font-size: larger;
+
+    
+    
+}
+
+
+
+.edit-tab-h1:hover{
+    box-shadow: 2px 2px 2px 2px #f1f1f1;
+}
+
+.active{
+    border-bottom: 1px solid #110746;
+}
+
+.ns{
+display: none;
+height: 350px;
+position: absolute;
+color: #110746;
+background: #fff;
+box-shadow: 1px 1px 1px 1px #f1f1f1;
+top:100px;
+left: 400px;
+width: 300px;
+border-radius: 25px;
+}
+
+.newp{
+    padding: 10px;
+}
+
+.newp-head{
+    padding: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.parea{
+    padding: 50px;
+    background: #fff;
+box-shadow: 1px 4px 4px 4px #f1f1f1;
+border-radius: 25px;
+width: 900px;
+border-bottom: 30px;
+
+}
+
+.parea-hero{
+    padding-top: 20px;
+    display: flex;
+    padding: 20px;
+}
+
+.p-hero1{
+    flex:1;
+}
+
+.p-hero2{
+    flex:1;
+    text-align: right;
+}
+
+.parea-b{
+    display: flex;
+    padding: 20px;
+}
+
+.parea-b1{
+    padding: 10px;
+}
+
+.parea-b1:hover {
+    
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px 1px #f1f1f1;
+    
+  }
+
+.parea-b2{
+    flex: 1;
+    border-bottom:#000 1px solid ;
+    border: 10px solid white;
+    margin-top: -5px;
+    
+}
+.parea-b3{
+    /* flex: 1; */
+    text-align: right;
+    padding: 10px;
+}
+
+.parea-b3:hover{
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px 1px #f1f1f1;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .dot:active {
+    
+    
+    background-color: #110746;
+    
+  }
+
+  .cp{
+    display: none;
+    height: 550px;
+    position: absolute;
+    color: #110746;
+    background: #fff;
+    box-shadow: 1px 1px 1px 1px #f1f1f1;
+    top:100px;
+    left: 400px;
+    width: 500px;
+    border-radius: 25px;
+    }
+
+    .cep{
+    display: none;
+    height: 550px;
+    position: absolute;
+    color: #110746;
+    background: #fff;
+    box-shadow: 1px 1px 1px 1px #f1f1f1;
+    top:100px;
+    left: 400px;
+    width: 500px;
+    border-radius: 25px;
+    }
+
+    .posHead{
+        display: flex;
+        padding: 20px;
+    }
+
+    .posHead1{
+        flex: 1;
+    }
+
+    .posHead2{
+        flex: 1;
+        text-align: right;
+    }
+
+    .posArea1{
+        width: 700px;
+        background: #f1f1f1;
+        height: 80vh;
+        /* flex:2; */
+    }
+
+    .posArea2{
+        flex:1;
+        overflow: scroll;
+        height: 80vh;
+    }
+
+    .posBody{
+        display: flex;
+    }
+
+    .posProduct{
+        box-shadow: 2px 2px 2px 2px #f1f1f1;
+        padding: 20px;
+    }
+
+    .posFooter{
+        padding: 10px;
+        display: flex;
+    }
+    .posUser{
+        /* box-shadow: 1px 1px 1px 1px #fff; */
+        top: 10px;
+        padding: 20px;
+        /* width: 400px; */
+    }
+    .basic-addon1{
+        padding: 15px;
+       
+    background-color: #bbb;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    }
+
+    .basic-addon2{
+        padding: 10px;
+        height: 70px;
+    }
+
+    .basic-addon3{
+        padding: 10px;
+        width: 50px;
+        background-color: #110746;
+        color: #ffffff;
+        border-radius: 3px 20px 20px 3px;
+        
+    }
+
+
+    .posSearch{
+        /* box-shadow: 1px 1px 1px 1px #fff; */
+        margin-top: 20px;
+        padding: 20px;
+        /* width: 300px; */
+    }
+   
+
+
+   
+
+  
+

@@ -1,6 +1,6 @@
 import { html, LitElement, property } from 'lit-element';
 import { routerSubject$ } from '../../../settings/util/page-router';
-import { getHeaderFromFirebase } from '../../../secure/firebase.config';
+// import { getHeaderFromFirebase } from '../../../secure/firebase.config';
 import { BehaviorSubject } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { SubSink } from 'subsink';
@@ -69,18 +69,18 @@ class main extends LitElement {
     return this;
   }
 
-  subs = new SubSink();
-  templatesubject$ = new BehaviorSubject([]);
+  // subs = new SubSink();
+  // templatesubject$ = new BehaviorSubject([]);
 
-  header$ = getHeaderFromFirebase().pipe(
-    tap((theheader) => {
-      this.header = theheader;
+  // header$ = getHeaderFromFirebase().pipe(
+  //   tap((theheader) => {
+  //     this.header = theheader;
 
-      // setTimeout(() => {
-      //   document.getElementById('stuff').innerHTML = theheader[0].h1.html
-      // }, 2000);
-    }),
-  );
+  //     // setTimeout(() => {
+  //     //   document.getElementById('stuff').innerHTML = theheader[0].h1.html
+  //     // }, 2000);
+  //   }),
+  // );
 
   currentId = null;
   currentDivId = null;
